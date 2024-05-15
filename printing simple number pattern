@@ -1,0 +1,16 @@
+# Pyramid Pattern with Input
+
+# Get user input
+n = int(input("Enter the number of rows: "))
+
+# Generate the pyramid pattern
+for i in range(n):
+    # Print spaces
+    for j in range(n - i - 1):
+        print(" ", end="")
+
+    # Print numbers
+    for j in range(2 * i + 1):
+        print("*", end="")
+
+    print()
